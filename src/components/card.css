@@ -1,0 +1,31 @@
+*{
+    font-family: sans-serif;
+}
+.hero{
+    margin-top: 50px;
+    display: flex;  
+    flex-wrap: wrap; 
+     gap: 35px; 
+     justify-content: center; 
+     align-items: center;
+}
+.card{
+    padding: 10px;
+    border: 1px solid rgb(180, 177, 177);
+    width: 320px;
+    border-radius: 10px;
+    height: 380px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+img{
+    width: 300px;
+    height: 200px;
+}
+
+.countryName{
+    font-weight: 700;
+    font-style: 20px;
+    text-align: center;
+    padding: 20px 0;
+}
