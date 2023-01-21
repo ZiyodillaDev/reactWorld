@@ -1,78 +1,15 @@
-
-import FlagCard from "./images/flgs.jpg"
-const Card = () => {
+const Card = ({ img, population, region, capital, name }) => {
     return (
-        <>
-        <section className="hero">
+      <div className="all-cards">
         <div className="card">
-                <img src={FlagCard} alt="flag" className="pictures"/>
-                <h3>Turkey</h3>
-                <p>Some quick example text to build on <br/> the card title and make up the bulk of the <br/> card's content.</p>
-                <p>Population : 84339067</p>
-                <p>Capital : Ankara</p>
-                <p>Region : Asia</p>
-            </div>
-        <div className="card">
-                <img src={FlagCard} alt="flag" className="pictures"/>
-                <h3>Turkey</h3>
-                <p>Some quick example text to build on <br/> the card title and make up the bulk of the <br/> card's content.</p>
-                <p>Population : 84339067</p>
-                <p>Capital : Ankara</p>
-                <p>Region : Asia</p>
-            </div>
-        <div className="card">
-                <img src={FlagCard} alt="flag" className="pictures"/>
-                <h3>Turkey</h3>
-                <p>Some quick example text to build on <br/> the card title and make up the bulk of the <br/> card's content.</p>
-                <p>Population : 84339067</p>
-                <p>Capital : Ankara</p>
-                <p>Region : Asia</p>
-            </div>
-        <div className="card">
-                <img src={FlagCard} alt="flag" className="pictures"/>
-                <h3>Turkey</h3>
-                <p>Some quick example text to build on <br/> the card title and make up the bulk of the <br/> card's content.</p>
-                <p>Population : 84339067</p>
-                <p>Capital : Ankara</p>
-                <p>Region : Asia</p>
-            </div>
-        <div className="card">
-                <img src={FlagCard} alt="flag" className="pictures"/>
-                <h3>Turkey</h3>
-                <p>Some quick example text to build on <br/> the card title and make up the bulk of the <br/> card's content.</p>
-                <p>Population : 84339067</p>
-                <p>Capital : Ankara</p>
-                <p>Region : Asia</p>
-            </div>
-        <div className="card">
-                <img src={FlagCard} alt="flag" className="pictures"/>
-                <h3>Turkey</h3>
-                <p>Some quick example text to build on <br/> the card title and make up the bulk of the <br/> card's content.</p>
-                <p>Population : 84339067</p>
-                <p>Capital : Ankara</p>
-                <p>Region : Asia</p>
-            </div>
-        <div className="card">
-                <img src={FlagCard} alt="flag" className="pictures"/>
-                <h3>Turkey</h3>
-                <p>Some quick example text to build on <br/> the card title and make up the bulk of the <br/> card's content.</p>
-                <p>Population : 84339067</p>
-                <p>Capital : Ankara</p>
-                <p>Region : Asia</p>
-            </div>
-        <div className="card">
-                <img src={FlagCard} alt="flag" className="pictures"/>
-                <h3>Turkey</h3>
-                <p>Some quick example text to build on <br/> the card title and make up the bulk of the <br/> card's content.</p>
-                <p>Population : 84339067</p>
-                <p>Capital : Ankara</p>
-                <p>Region : Asia</p>
-            </div>
-
-        </section>
-        </>
+          <img src={img} alt="flags" style={{ width: "100%" }} />
+          <h2>{name}</h2>
+          <p>Population: {population}</p>
+          <p>Region: {region}</p>
+          <p>Capital: {capital}</p>
+        </div>
+      </div>
     );
   };
   
   export default Card;
-  
