@@ -3,12 +3,10 @@ import Header from "./components/header";
 import "./components/header.css"
 import Form from "./components/form";
 import "./components/form.css"
-import Card from "./components/card";
-import "./components/card.css"
-import data from "./components/data";
+
 function App() {
   return (
-    <>
+    <div className="container">
      <Header />
      <Form />
      <div className="countries">
@@ -24,7 +22,7 @@ function App() {
           );
         })}
       </div>
-    </>
+    </div>
   )
 }
 
